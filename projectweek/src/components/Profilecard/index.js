@@ -177,8 +177,8 @@ function Profilecard(props) {
 
   return (
     <div>
-        <button onClick={handleClick}>Click me</button>
-        <button onClick={handleClick1}>Click me!!</button>
+        <a onClick={handleClick}>Click me</a>
+        <a onClick={handleClick1}>Click me!!</a>
       {filteredArray.map((person) => (
         <div className="personalpanel" key={person.id}>
           <img className="profilepic" src={person.imageURL} alt="profile pic" />
