@@ -1,14 +1,17 @@
 import "./App.css";
 import React from "react";
-import NavBar from "../NavBar";
-
-
+import Dashboard from "../Dashboard";
+import Navbar from "../Navbar";
+import Peoplelist from "../Peoplelist";
+import Profilecard from "../Profilecard";
 
 function App() {
   return <div>
-
-    <NavBar/>
-    </div>;
+    <Dashboard />
+    <Navbar /> 
+    <Peoplelist />
+    <Profilecard />
+  </div>;
 }
 
 export default App;
