@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 
-function Slider({ value }) {
+function Slider({ sliderValue }) {
   const [sliderValue, setSliderValue] = useState(50);
 
   const handleSliderChange = (event) => {
