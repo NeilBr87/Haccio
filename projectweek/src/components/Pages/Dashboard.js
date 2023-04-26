@@ -1,8 +1,9 @@
 import React from 'react';
+import pages from './pages.css';
 
 function Dashboard() {
   return (
-    <div>
+    <div className='pages'>
       <h1>Dashboard</h1>
     </div>
   );
