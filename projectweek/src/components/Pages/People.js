@@ -1,10 +1,10 @@
 import React from "react";
-
+import Profilecard from "../Profilecard";
 
 function People() {
     return (
         <div className='pages'>
-            <h1>People</h1>
+            <Profilecard />
         </div>
     )
 }

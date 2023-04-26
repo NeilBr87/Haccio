@@ -1,0 +1,23 @@
+.forum__post {
+    background-color: rgb(240, 240, 240);
+    max-width: 800px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.forumcontent {
+    margin-top: -1px;
+    margin-bottom: 8px;
+}
+
+.expand-content {
+    margin-top: -1px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    margin-left: 40px;
+    padding: 3px 3px 3px 3px;
+    background-color:rgb(250, 250, 250);
+    border: 1px solid black;
+    margin-bottom: -3px;
+}
