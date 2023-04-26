@@ -661,7 +661,13 @@ function ResourceLibrary() {
             <>
               <span className="titleLink">
                 <h3>{resource.title}</h3>
-                <a href={resource.link} target="_blank" rel="noopener noreferrer">{resource.link}</a>
+                <a
+                  href={resource.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {resource.link}
+                </a>
               </span>
               <span classname="descFav">
                 <p>{resource.description}</p>
