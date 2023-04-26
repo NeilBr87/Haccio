@@ -300,7 +300,6 @@ function Profilecard(props) {
             <h4>Confident</h4>
           </div>
           <div className="plainline123right"></div>
-          <hr className="linebreakright" size="2" color="blue"></hr>
           <div className="proficiencyfields">
             <p className="proficiencytext">HTML</p>
             <Slider className="proficiencybar" value={person.HTMLvalue} />
@@ -325,14 +324,9 @@ function Profilecard(props) {
             <p className="proficiencytext">Playwright</p>
             <Slider className="proficiencybar" value={person.Playwrightvalue} />
           </div>
-          
-          <h4>Proficiency awards</h4>
-          <div className="plainline123right"></div>
-          <br></br>
-          <br></br>
-          <br></br>
           <br></br>
           <div className="plainline123right"></div>
+
 
           <div className="github">
             <img className="githublogo" src="https://avatars.githubusercontent.com/u/67468718?v=4"></img>

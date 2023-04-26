@@ -3,7 +3,7 @@
     flex-direction: row ;
     justify-content: space-evenly ;
     margin-left: 50px ;
-    margin-top: 60px ;
+    margin-top: 20px ;
     gap: 140px;
 }
 
@@ -12,16 +12,20 @@
     flex-direction: column ;
     justify-content: first baseline ;
     border: 1px solid rgb(180, 180, 180) ;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1) ;
     border-radius: 3% ;
-    max-width: 500px ;
+    max-width: 450px ;
     margin: 0 auto ;
-    padding: 50px 50px 50px 50px ;
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .profilepic {
-    width: 320px ;
-    height: 300px ;
+    width: 340px ;
+    height: 340px ;
     padding: 5px 5px 5px 5px ;
     margin-top: -15px ;
 }
@@ -110,7 +114,8 @@
   .progressEnds {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 145px;
     margin-top: -5px;
   }
 
