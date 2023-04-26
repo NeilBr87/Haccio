@@ -1,8 +1,9 @@
 
 import React from "react";
 import { useState } from "react";
-import Peoplelist from "../Peoplelist";
+// import Peoplelist from "../Peoplelist";
 import "./style.css";
+import Slider from "../Sliders";
 
 function Profilecard(props) {
   const peopleArray = [
@@ -97,7 +98,7 @@ function Profilecard(props) {
         Email: "ElliotAlderson@gmail.com"
       },
       {
-        id: "abc8",
+        id: "abc7",
         Name: "Nigel Harrison",
         imageURL: "https://media.istockphoto.com/id/482913249/photo/richard-kirstin-balcony-laptop-038.jpg?s=612x612&w=0&k=20&c=gwhR3Wet0VBvnMBns4jc9OBnruv2nqYYyXCN7SbtXo8=",
         HTMLvalue: 50,
@@ -112,7 +113,7 @@ function Profilecard(props) {
         Email: "nigelharris@gmail.com"
       },
       {
-        id: "abc9",
+        id: "abc8",
         Name: "Shirley Knot",
         imageURL: "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.jpg?s=612x612&w=0&k=20&c=8ssXDNTp1XAPan8Bg6mJRwG7EXHshFO5o0v9SIj96nY=",
         HTMLvalue: 70,
@@ -128,7 +129,7 @@ function Profilecard(props) {
       },
     
       {
-        id: "abc10",
+        id: "abc9",
         Name: "Phil Thomas",
         imageURL: "https://media.istockphoto.com/id/1166588777/photo/senior-man-remembering.jpg?s=612x612&w=0&k=20&c=nrXhvhJEZWQlsn4sdKN-CNrvIbRsF5Osiz6alpVQQLo=",
         HTMLvalue: 50,
@@ -145,7 +146,7 @@ function Profilecard(props) {
     
     
       {
-        id: "abc11",
+        id: "abc10",
         Name: "Jack Smith",
         imageURL: "https://media.istockphoto.com/id/1074638206/photo/side-view-long-beard-business-man-portrait.jpg?s=612x612&w=0&k=20&c=3CXnWtuXukFWvfiepdmohttsVe3GzF8q6zKR5SGp92U=",
         HTMLvalue: 80,
@@ -161,35 +162,188 @@ function Profilecard(props) {
       },
   ]
 
-  const [currentID, setCurrentID] = useState(null);
+  const [currentID, setCurrentID] = useState("abc1");
 
   function handleClick() {
-    console.log(currentID)
-    setCurrentID("abc3");
+    setCurrentID("abc1");
   }
 
   function handleClick1() {
-    console.log(currentID)
+    setCurrentID("abc2");
+  }
+
+  function handleClick2() {
+    setCurrentID("abc3");
+  }
+
+  function handleClick3() {
     setCurrentID("abc4");
   }
+
+  function handleClick4() {
+    setCurrentID("abc5");
+  }
+
+  function handleClick5() {
+    setCurrentID("abc6");
+  }
+
+  function handleClick6() {
+    setCurrentID("abc7");
+
+  }
+
+  function handleClick7() {
+    setCurrentID("abc8");
+  }
+
+  function handleClick8() {
+    setCurrentID("abc9");
+  }
+
+  function handleClick9() {
+    setCurrentID("abc10");
+  }
+
+
+
   let filteredArray = peopleArray.filter((person) => person.id === currentID);
 
 
   return (
-    <div>
-        <a onClick={handleClick}>Click me</a>
-        <a onClick={handleClick1}>Click me!!</a>
+    <div className="nameandprofile">
+
+      <div className="peoplenames">
+
+      <div className="topheadings">
+        <h3 className="nameheadings">A</h3>
+        <h3 className="nameheadings">Cohort</h3>
+      </div>
+
+        <div className="namecohort">
+          <span className="buttontext" onClick={handleClick}>Adam Adams</span>
+          <p className="buttontext">Cohort 1</p>
+        </div>
+        
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+        
+        <div className="namecohort">
+          <span className="buttontext" onClick={handleClick1}>Adam Aronson</span>
+          <p className="buttontext">Cohort 1</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick2}>Ashley Abramovich</span>
+        <p className="buttontext">Cohort 2</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <h3>B</h3>
+
+        <div className="namecohort">
+          <span className="buttontext" onClick={handleClick3}>Brian Berman</span>
+          <p className="buttontext">Cohort 2</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick4}>Brad Bridge</span>
+        <p className="buttontext">Cohort 3</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <h3>E</h3>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick5}>Elliot Alderson</span>
+        <p className="buttontext">Cohort 4</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <h3>J</h3>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick9}>Jack Smith</span>
+        <p className="buttontext">Cohort 6</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <h3>N</h3>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick6}>Nigel Harrison</span>
+        <p className="buttontext">Cohort 4</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <h3>P</h3>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick8}>Phil Thomas</span>
+        <p className="buttontext">Cohort 5</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+        <h3>S</h3>
+
+        <div className="namecohort">
+        <span className="buttontext" onClick={handleClick7}>Shirley Knot</span>
+        <p className="buttontext">Cohort 5</p>
+        </div>
+        <hr className="linebreak" size="3" color="darkblue"></hr>
+
+
+
+        
+      </div>
       {filteredArray.map((person) => (
         <div className="personalpanel" key={person.id}>
           <img className="profilepic" src={person.imageURL} alt="profile pic" />
-          <h3>Name: {person.Name}</h3>
-          <p>HTML: {person.HTMLvalue}</p>
-          <p>CSS: {person.CSSvalue}</p>
-          <p>JS: {person.JSvalue}</p>
-          <p>Jest: {person.Jestvalue}</p>
-          <p>React: {person.Reactvalue}</p>
-          <p>Playwright: {person.Playwrightvalue}</p>
-          <p>Github Profile: <a href={person.githubprofile}>{person.githubprofile}</a></p>
+          <h3 className="personname">{person.Name}</h3>
+          <div className="progressEnds">
+            <h4>Needs Focus</h4>
+            <h4>Confident</h4>
+          </div>
+          <hr className="linebreakright" size="2" color="blue"></hr>
+          <div className="proficiencyfields">
+            <p className="proficiencytext">HTML</p>
+            <Slider className="proficiencybar" value={person.HTMLvalue} />
+          </div>
+
+          <div className="proficiencyfields">
+            <p className="proficiencytext">CSS</p>
+            <Slider className="proficiencybar" value={person.CSSvalue} />
+          </div>
+
+          <div className="proficiencyfields">
+            <p className="proficiencytext">JS</p>
+            <Slider className="proficiencybar" value={person.JSvalue} />
+          </div>
+
+          <div className="proficiencyfields">
+            <p className="proficiencytext">Jest</p>
+            <Slider className="proficiencybar" value={person.Jestvalue} />
+          </div>
+
+          <div className="proficiencyfields">
+            <p className="proficiencytext">Playwright</p>
+            <Slider className="proficiencybar" value={person.Playwrightvalue} />
+          </div>
+          
+          <h4>Proficiency awards</h4>
+          <hr className="linebreakright" size="2" color="blue"></hr>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <hr className="linebreakright" size="2" color="blue"></hr>
+          <div className="github">
+            <img className="githublogo" src="https://avatars.githubusercontent.com/u/67468718?v=4"></img>
+            <p>{person.githubprofile}</p>
+          </div>
           <p>LinkedIn: <a href={person.Linkedin}>{person.Linkedin}</a></p>
           <p>Slack: <a href={person.Slack}>{person.Slack}</a></p>
           <p>Email: {person.Email}</p>
