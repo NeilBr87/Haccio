@@ -1,9 +1,15 @@
 import React from 'react';
+import Library from '../Library/Library';
 
 function Resources() {
   return (
-    <div className='pages'>
-      <h1>Resources</h1>
+    <div className='title' id="title">
+ 
+         <div className="pages" id="resources">
+   
+      
+      <Library />
+    </div>
     </div>
   );
 }

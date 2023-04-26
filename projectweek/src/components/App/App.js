@@ -9,20 +9,11 @@ import People from '../Pages/People';
 import Settings from '../Pages/Settings';
 import Homepage from '../Pages/Homepage';
 import Forum from '../Pages/Forum';
+import JavascriptResource from '../Pages/JavascriptResource';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-
-  // Function to handle the login
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
-
-  // Function to handle the logout
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
 
   return (
     <div>
@@ -37,6 +28,10 @@ function App() {
           <Route path="/people" element={<People />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/forum" element={<Forum />} />
+          <Route
+            path="/JavascriptResource"
+            element={<JavascriptResource />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

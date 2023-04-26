@@ -1,0 +1,37 @@
+.headings{
+   display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+}
+
+.resources {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+hr {
+    border: 1px solid #363636;
+    margin-bottom: 25px;
+    opacity: 0.1;
+    width: 100%;
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #navIcon {
+    height:19px;
+    margin: 5px;
+    opacity: 0.6;
+}
