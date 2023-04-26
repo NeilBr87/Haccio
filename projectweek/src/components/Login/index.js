@@ -41,7 +41,7 @@ const LoginForm = () => {
       <input type="text" placeholder="Username"/>
       <input type="password" placeholder="Password"/>
       <div className="login-btn" onClick={popup}>Login</div>
-
+//
       <p className='text'> Or login using</p>
 
       <div className="alt-login">
