@@ -51,14 +51,14 @@ function StaticForum() {
                 </div>
 
                 <div className='forum__post'>
-                    <p className="forumcontent">Accidentally deleted all of my untracked folders with Git Clear - am I screwed?</p>
-                    <h4 className="forumcontent">@Ihategit2023</h4>
+                    <p className="forumcontent">Line breaks being overriden?</p>
+                    <h4 className="forumcontent">@anxiousCSSer</h4>
                     <button onClick={handleClick1}>+</button>
                     {expanded1 && (
                         <div>
                             <div className="expand-content">
-                                <p>Unfortunatley so. Git clear is a very powerful, albeit misused, tool.</p>
-                                <h4>@infinitejest541</h4>
+                                <p>I'm using a series of HR tags to create breaks in my work but they won't show on the actual live page. Why is this?</p>
+                                <h4>@anxiousCSSer</h4>
                             </div>
                             <div className="expand-content">
                                 <p>If you have backup software, now might be an optimal time to use it!</p>
