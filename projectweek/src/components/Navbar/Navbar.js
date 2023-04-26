@@ -66,37 +66,37 @@ function Navbar() {
           </li>
 
           <li className="sidebar-menu-item">
-            <a href="/" className="sidebar-menu-link">
+            <a href="/dashboard" className="sidebar-menu-link">
               Dashboard
             </a>
           </li>
           <hr></hr>
           <li className="sidebar-menu-item">
-            <a href="/" className="sidebar-menu-link">
+            <a href="/support" className="sidebar-menu-link">
               Support
             </a>
           </li>
           <hr></hr>
           <li className="sidebar-menu-item">
-            <a href="/" className="sidebar-menu-link">
+            <a href="/forum" className="sidebar-menu-link">
               Forum
             </a>
           </li>
           <hr></hr>
           <li className="sidebar-menu-item">
-            <a href="/" className="sidebar-menu-link">
+            <a href="/resources" className="sidebar-menu-link">
               Resources
             </a>
           </li>
           <hr></hr>
           <li className="sidebar-menu-item">
-            <a href="/" className="sidebar-menu-link">
+            <a href="/people" className="sidebar-menu-link">
               People
             </a>
           </li>
           <hr></hr>
           <li className="sidebar-menu-item">
-            <a href="/" className="sidebar-menu-link">
+            <a href="/progress" className="sidebar-menu-link">
               Progress
             </a>
           </li>
@@ -107,3 +107,14 @@ function Navbar() {
 }
 
 export default Navbar;
+
+{
+  /* <button
+            className={
+              props.activePage === 'Homepage' ? 'selected' : ''
+            }
+            onClick={handleHomepageClick}
+          >
+            Homepage
+          </button> */
+}
