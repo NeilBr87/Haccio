@@ -1,0 +1,26 @@
+.online-now {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .number {
+    font-size: 14px;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  

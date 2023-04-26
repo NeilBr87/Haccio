@@ -1,0 +1,19 @@
+.pages {
+    width: 75%;
+    margin: 0 250px;
+    background-color: rgb(255, 255, 255);
+
+    }
+
+    #resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    
