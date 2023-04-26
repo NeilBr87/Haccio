@@ -226,6 +226,7 @@ function Profilecard(props) {
         </div>
         
         <hr className="linebreak" size="3" color="darkblue"></hr>
+
         
         <div className="namecohort">
           <span className="buttontext" onClick={handleClick1}>Adam Aronson</span>
@@ -275,7 +276,7 @@ function Profilecard(props) {
         <span className="buttontext" onClick={handleClick6}>Nigel Harrison</span>
         <p className="buttontext">Cohort 4</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <hr className="linebreak" size="3" color="black"></hr>
 
         <h3>P</h3>
 

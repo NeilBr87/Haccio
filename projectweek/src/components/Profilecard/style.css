@@ -1,98 +1,98 @@
 .nameandprofile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 250px;
-    margin-top: 60px;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-around ;
+    margin-left: 180px ;
+    margin-top: 60px ;
 }
 
 .personalpanel {
-    display: flex;
-    flex-direction: column;
-    justify-content: first baseline;
-    border: 1px solid rgb(180, 180, 180);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 3%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 50px 50px 50px 50px;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: first baseline ;
+    border: 1px solid rgb(180, 180, 180) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) ;
+    border-radius: 3% ;
+    max-width: 500px ;
+    margin: 0 auto ;
+    padding: 50px 50px 50px 50px ;
 }
 
 .profilepic {
-    width: 320px;
-    height: 300px;
-    padding: 5px 5px 5px 5px;
-    margin-top: -15px;
+    width: 320px ;
+    height: 300px ;
+    padding: 5px 5px 5px 5px ;
+    margin-top: -15px ;
 }
 
 .peoplenames {
-    height: 900px; /* Set the height of the div */
-    overflow-x: hidden; /* Add scrollbar to the div */
-    overflow-y: auto; /* hide vertical scrollbar */
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
+    max-width: 700px;
+    height: 900px ; /* Set the height of the div */
+    overflow-x: hidden ; /* Add scrollbar to the div */
+    overflow-y: auto ; /* hide vertical scrollbar */
+    margin-top: 50px ;
+    display: flex ;
+    flex-direction: column ;
+    text-align: justify ;
 }
 
 .buttontext {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; /* Add some spacing between the columns */
-    border: none;
-    background-color: transparent;
-    font-size: inherit;
-    font-family: inherit;
-    text-align: justify !important;
-
-    width: 300px;
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-gap: 10px ; /* Add some spacing between the columns */
+    border: none ;
+    background-color: transparent ;
+    font-size: inherit ;
+    font-family: inherit ;
+    text-align: justify ;
+    width: 300px ;
 }
 
 .linebreak {
-    width: 900px;
+    width: 900px ;
     color: darkblue;
 }
 
 .namecohort {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 100px;
+    display: flex ;
+    flex-direction: row ;
+    align-items: baseline ;
+    gap: 100px ;
 }
 
 .topheadings {
-    display: flex;
-    flex-direction: row;
-    gap: 386px
+    display: flex ;
+    flex-direction: row ;
+    gap: 386px ; 
 }
 
 .peoplenames::-webkit-scrollbar {
-    width: 12px;
-    height: 5px;
+    width: 12px ;
+    height: 5px ;
   }
   
   .peoplenames::-webkit-scrollbar-track {
     background-color: #f1f1f1;
-    border-radius: 5px;
+    border-radius: 5px ;
   }
   
   .peoplenames::-webkit-scrollbar-thumb {
     background-color: #888;
-    border-radius: 5px;
+    border-radius: 5px ;
   }
   
   .peoplenames::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: #555 ;
   }
 
   .proficiencyfields {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    text-align: left;
-    height: 25px;
+    display: flex ;
+    flex-direction: row ;
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 10px ;
+    text-align: left ;
+    height: 25px ;
   }
 
   .proficiencytext {
@@ -130,4 +130,8 @@
   .githublogo {
     width: 45px;
     height: 45px;
+  }
+
+  .newlinebreak {
+    border-top: 2px solid black;
   }
