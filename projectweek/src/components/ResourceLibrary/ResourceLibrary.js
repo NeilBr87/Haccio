@@ -248,7 +248,7 @@ function ResourceLibrary() {
 
   return (
     <div>
-      <h1 className='ResourcesTitle'> Resources</h1>
+      <h1 className="ResourcesTitle"> Resources</h1>
       <div class="parent">
         <button
           value="html"
@@ -333,7 +333,7 @@ function ResourceLibrary() {
         {filteredResources.map((resource) => (
           <li key={resource.id}>
             <>
-              <span className='titleLink'>
+              <span className="titleLink">
                 <h3>{resource.title}</h3>
                 <p>{resource.link}</p>{' '}
               </span>
@@ -342,6 +342,7 @@ function ResourceLibrary() {
                 <input className="resourceFav" type="checkbox" />
               </span>
             </>
+            <hr></hr>
           </li>
         ))}
       </ul>
