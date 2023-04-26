@@ -1,13 +1,13 @@
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 0.5fr);
+    grid-template-columns: repeat(7, 0.5fr);
     grid-template-rows: repeat(2, 0.5fr); /* Change to 4 rows */
     grid-column-gap: 35px;
     
-    padding: 50px 50px;
+    padding: 30px 30px;
     background-color: rgb(243, 243, 243);
     border-radius: 15px;
-    height: 350px;
+    height: 90px;
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
   }
   
@@ -15,26 +15,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     color: #33b2f1;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   
-  .libraryIcon {
-    grid-row-end: span 2; /* Change to span 2 rows */
-    height: 150px;
-    width: 150px;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.8;
-    
-  }
-  
-  .libraryIcon:hover {
-    opacity: 1;
-    scale: 1.2;
-  }
-
   
