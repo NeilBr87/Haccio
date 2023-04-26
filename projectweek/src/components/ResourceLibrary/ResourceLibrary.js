@@ -628,7 +628,7 @@ function ResourceLibrary() {
 
         <button
           value="Figma"
-          onClick={() => handleButtonClick('javascript')}
+          onClick={() => handleButtonClick('figma')}
           className="libraryIcon"
         >
           <img
@@ -661,7 +661,7 @@ function ResourceLibrary() {
             <>
               <span className="titleLink">
                 <h3>{resource.title}</h3>
-                <p>{resource.link}</p>{' '}
+                <a href={resource.link} target="_blank" rel="noopener noreferrer">{resource.link}</a>
               </span>
               <span classname="descFav">
                 <p>{resource.description}</p>
