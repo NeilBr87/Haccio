@@ -1,12 +1,10 @@
 import React from 'react';
+import Login from '../Login';
 
 function Homepage() {
   return (
-    <div className='pages'>
-      <h1> This is a test</h1>
-      <h1> This is a test</h1>
-      <h1> This is a test</h1>
-      <h1> This is a test</h1>
+    <div className="pages">
+      <Login />
     </div>
   );
 }

@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import './navBar.css';
 import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 import OnlineNow from '../OnlineNow/OnlineNow';
+import Login from '../Login';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(true);
+  const [showLogin, setShowLogin] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLogin(true);
+  };
 
   function toggleSidebar() {
     setIsOpen(!isOpen);
@@ -117,6 +123,7 @@ function Navbar() {
           />
           <button className="register">Register</button>
           <button className="loginbutton"> Login</button>
+          <Login />
         </div>
       )}
     </nav>
