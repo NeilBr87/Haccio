@@ -71,7 +71,10 @@
    
 
 input {
+    font-size: medium;
+    height: 2rem;
     border: none;
+    box-sizing: 2px;
 }
 
 .login-btn:hover{
@@ -87,4 +90,22 @@ input:focus {
     bottom: -2em;
 }
 
-.hide {display: none;}
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;}
