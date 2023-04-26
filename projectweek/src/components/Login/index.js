@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.css'
 import { useState} from 'react'
+import officevideo from '../../components/Assets/officevideo.mp4'
+
 
 const LoginForm = () => {
 
@@ -32,12 +34,13 @@ const LoginForm = () => {
   // }
   
   return (
-    <div className="cover">
+    <>
+      <video className='officeVideo' src={officevideo} type="video/mp4" autoPlay muted loop/>
+      <div className="cover">
       <h1>Login</h1>
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-
-      <button className="login-btn" onClick={popup}>Login</button>
+      <input type="text" placeholder="Username"/>
+      <input type="password" placeholder="Password"/>
+      <div className="login-btn" onClick={popup}>Login</div>
 
       <p className='text'> Or login using</p>
 
@@ -50,6 +53,7 @@ const LoginForm = () => {
         <p>Username or password incorrect</p>
       </div>
     </div>
+    </>
   )
 }
 
