@@ -1,7 +1,20 @@
 import React from 'react'
 import './style.css'
+import { useState } from 'react'
 
 const loginForm = () => {
+
+  const [popupStyle,showPopup]= useState(hide)
+
+  const popup = () => {
+    showPopup("login-popup")
+    setTimeout(() => showPopup("hide"), 3000)
+
+  
+
+  }
+
+
   return (
     <div className="cover">
     <h1>Login</h1>

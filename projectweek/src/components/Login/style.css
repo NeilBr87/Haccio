@@ -27,6 +27,7 @@
     height:3em;
     display: flex;
     justify-content: space-around;
+    transition: ease 0.5s
 
 }
 .alt-login div {
@@ -38,13 +39,52 @@
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-
-
+    transition: ease 0.5s;
+}
+.alt-login div:hover{
+    transform: scale(1.25);
+    transition: ease 0.5s;
 }
 
 .Google {background-image: url("https://cdn.iconscout.com/icon/free/png-256/google-470-675827.png");}
 
-.GitHub {
-    background-color: white;
-    background-image: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
+.GitHub{
+    background-color: transparent; /* remove black background */
+    background-image: url("https://i.pinimg.com/originals/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.png");
+    background-size: cover; /* make image cover entire element */
+    background-position: center; /* center image */
+    width: 300px; /* set element width to make image bigger */
+    height: 300px; /* set element height to make image bigger */
 }
+
+.login-btn{
+    width: 40%;
+    height: 3em;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+   
+
+input {
+    border: none;
+}
+
+.login-btn:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+input:focus {
+    outline-color: green;
+}
+
+.text{
+    position: relative;
+    bottom: -2em;
+}
+
+.hide {display: none;}
