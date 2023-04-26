@@ -6,11 +6,10 @@ import Dashboard from '../Pages/Dashboard';
 import Support from '../Pages/Support';
 import Resources from '../Pages/Resources';
 import People from '../Pages/People';
-import Profilecard from "../Profilecard";
+import Profilecard from '../Profilecard';
 import Settings from '../Pages/Settings';
 import Homepage from '../Pages/Homepage';
 import Forum from '../Pages/Forum';
-import JavascriptResource from '../Pages/JavascriptResource';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -29,10 +28,6 @@ function App() {
           <Route path="/people" element={<People />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/forum" element={<Forum />} />
-          <Route
-            path="/JavascriptResource"
-            element={<JavascriptResource />}
-          />
         </Routes>
       </BrowserRouter>
     </div>

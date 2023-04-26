@@ -3,14 +3,10 @@ import Library from '../Library/Library';
 
 function Resources() {
   return (
-    <div className='title' id="title">
- 
-         <div className="pages" id="resources">
-   
-      
+    <div className='title' id="title">      
       <Library />
     </div>
-    </div>
+  
   );
 }
 
