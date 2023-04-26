@@ -216,83 +216,76 @@ function Profilecard(props) {
       <div className="peoplenames">
 
       <div className="topheadings">
-        <h3 className="nameheadings">A</h3>
+        <h3 className="nameheadings">A-M</h3>
         <h3 className="nameheadings">Cohort</h3>
       </div>
-
+      
         <div className="namecohort">
           <span className="buttontext" onClick={handleClick}>Adam Adams</span>
           <p className="buttontext">Cohort 1</p>
         </div>
         
-        <hr className="linebreak" size="3" color="darkblue"></hr>
-
+        <div className="plainline"></div>
         
         <div className="namecohort">
           <span className="buttontext" onClick={handleClick1}>Adam Aronson</span>
           <p className="buttontext">Cohort 1</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick2}>Ashley Abramovich</span>
         <p className="buttontext">Cohort 2</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
-
-        <h3>B</h3>
+        <div className="plainline"></div>
 
         <div className="namecohort">
           <span className="buttontext" onClick={handleClick3}>Brian Berman</span>
           <p className="buttontext">Cohort 2</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick4}>Brad Bridge</span>
         <p className="buttontext">Cohort 3</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
-        <h3>E</h3>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick5}>Elliot Alderson</span>
         <p className="buttontext">Cohort 4</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
-        <h3>J</h3>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick9}>Jack Smith</span>
         <p className="buttontext">Cohort 6</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
-        <h3>N</h3>
+        <h3>N-Z</h3>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick6}>Nigel Harrison</span>
         <p className="buttontext">Cohort 4</p>
         </div>
-        <hr className="linebreak" size="3" color="black"></hr>
+        <div className="plainline"></div>
 
-        <h3>P</h3>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick8}>Phil Thomas</span>
         <p className="buttontext">Cohort 5</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
-        <h3>S</h3>
 
         <div className="namecohort">
         <span className="buttontext" onClick={handleClick7}>Shirley Knot</span>
         <p className="buttontext">Cohort 5</p>
         </div>
-        <hr className="linebreak" size="3" color="darkblue"></hr>
+        <div className="plainline"></div>
 
 
 
@@ -306,6 +299,7 @@ function Profilecard(props) {
             <h4>Needs Focus</h4>
             <h4>Confident</h4>
           </div>
+          <div className="plainline123right"></div>
           <hr className="linebreakright" size="2" color="blue"></hr>
           <div className="proficiencyfields">
             <p className="proficiencytext">HTML</p>
@@ -333,21 +327,36 @@ function Profilecard(props) {
           </div>
           
           <h4>Proficiency awards</h4>
-          <hr className="linebreakright" size="2" color="blue"></hr>
+          <div className="plainline123right"></div>
           <br></br>
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
-          <hr className="linebreakright" size="2" color="blue"></hr>
+          <div className="plainline123right"></div>
+
           <div className="github">
             <img className="githublogo" src="https://avatars.githubusercontent.com/u/67468718?v=4"></img>
             <p>{person.githubprofile}</p>
           </div>
-          <p>LinkedIn: <a href={person.Linkedin}>{person.Linkedin}</a></p>
-          <p>Slack: <a href={person.Slack}>{person.Slack}</a></p>
-          <p>Email: {person.Email}</p>
+          <div className="plainline123right"></div>
+
+          <div className="linkedin">
+            <img className="linkedinlogo" src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"></img>
+            <p>{person.Linkedin}</p>
+          </div>
+          <div className="plainline123right"></div>
+
+          <div className="slack">
+            <img className="slacklogo" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png"></img>
+            <p>{person.Slack}</p>
+          </div>
+          <div className="plainline123right"></div>
+
+          <div className="email">
+            <img className="emaillogo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/If_aiga_mail_134146_%281%29.png?20170917074726"></img>
+            <p>{person.Email}</p>
+          </div>
+          <div className="plainline123right"></div>
         </div>
       ))}
     </div>

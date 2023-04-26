@@ -1,9 +1,10 @@
 .nameandprofile {
     display: flex ;
     flex-direction: row ;
-    justify-content: space-around ;
-    margin-left: 180px ;
+    justify-content: space-evenly ;
+    margin-left: 50px ;
     margin-top: 60px ;
+    gap: 140px;
 }
 
 .personalpanel {
@@ -26,7 +27,7 @@
 }
 
 .peoplenames {
-    max-width: 700px;
+    width: 1200px;
     height: 900px ; /* Set the height of the div */
     overflow-x: hidden ; /* Add scrollbar to the div */
     overflow-y: auto ; /* hide vertical scrollbar */
@@ -48,7 +49,7 @@
     width: 300px ;
 }
 
-.linebreak {
+.linebreak123 {
     width: 900px ;
     color: darkblue;
 }
@@ -63,7 +64,7 @@
 .topheadings {
     display: flex ;
     flex-direction: row ;
-    gap: 386px ; 
+    gap: 360px ; 
 }
 
 .peoplenames::-webkit-scrollbar {
@@ -123,8 +124,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin-left: 5px;
   }
 
   .githublogo {
@@ -134,4 +139,76 @@
 
   .newlinebreak {
     border-top: 2px solid black;
+  }
+
+  .blackline {
+    width: 900px;
+    z-index: 999;
+  }
+
+  .plainline {
+    border-bottom: 1px solid rgb(150, 150, 180);
+    width: 750px;
+  }
+
+  .plainline123right {
+    width: 320px;
+    border-bottom: 1px solid rgb(150, 150, 180);
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  .linkedinlogo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .myName {
+    margin: 0 auto;
+  }
+
+  .slack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .slacklogo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .emaillogo {
+    width: 45px;
+    height: 35px;
   }
