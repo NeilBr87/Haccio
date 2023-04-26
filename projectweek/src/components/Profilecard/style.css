@@ -2,29 +2,34 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 200px;
-    padding: 10px 10px 10px 10px;
+    margin-left: 250px;
+    margin-top: 60px;
 }
 
 .personalpanel {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
+    justify-content: first baseline;
+    border: 1px solid rgb(180, 180, 180);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3%;
     max-width: 500px;
     margin: 0 auto;
     padding: 50px 50px 50px 50px;
 }
 
 .profilepic {
-    width: 300px;
+    width: 320px;
     height: 300px;
     padding: 5px 5px 5px 5px;
+    margin-top: -15px;
 }
 
 .peoplenames {
-    margin-top: 100px;
+    height: 900px; /* Set the height of the div */
+    overflow-x: hidden; /* Add scrollbar to the div */
+    overflow-y: auto; /* hide vertical scrollbar */
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -52,5 +57,77 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: 200px;
+    gap: 100px;
 }
+
+.topheadings {
+    display: flex;
+    flex-direction: row;
+    gap: 386px
+}
+
+.peoplenames::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+  }
+  
+  .peoplenames::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .peoplenames::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  .peoplenames::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  .proficiencyfields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: left;
+    height: 25px;
+  }
+
+  .proficiencytext {
+    width: 52px;
+    font-size: 12px;
+  }
+
+  .personname {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .progressEnds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -5px;
+  }
+
+  .linebreakright {
+    width: 320px;
+    margin-top: -8px;
+    margin-bottom: -2px;
+  }
+
+  .github {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .githublogo {
+    width: 45px;
+    height: 45px;
+  }
