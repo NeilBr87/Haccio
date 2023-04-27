@@ -3,6 +3,13 @@
     flex-direction: row;
 
 }
+
+ @media screen and (max-width: 1327px){
+  .page {
+    flex-direction:column;
+  }
+}
+
 .UserProficiency1 {
     display: flex;
     flex-direction: column;
