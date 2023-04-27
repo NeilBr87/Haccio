@@ -3,7 +3,18 @@ import React, { useState } from 'react';
 
 function ResourceLibrary() {
   // default tool
-  const [filter, setFilter] = useState('');
+  const addResource = () => {
+    const newResource = {
+      id: resources.length + 1,
+      tool: '',
+      title: ' ',
+      link: '',
+      description: '',
+      keywords: ['', ''],
+    };
+    setResources([...resources, newResource]);
+  };
+
   const [resources, setResources] = useState([
     {
       id: 1,
@@ -557,24 +568,39 @@ function ResourceLibrary() {
       keywords: ['VS Code', 'extension', 'Jest', 'tests'],
     },
   ]);
+  const [filter, setFilter] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
+  // const [searchQuery, setSearchQuery] = useState('');
 
-  const handleFilterChange = (event) => {
-    setFilter(event.target.value);
-  };
+  // const handleSearchQueryChange = (event) => {
+  //   setSearchQuery(event.target.value);
+  // };
 
   const handleButtonClick = (tool) => {
     setFilter(tool);
+  };
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   const filteredResources = resources.filter(
     (resource) =>
       resource.title.toLowerCase().includes(filter.toLowerCase()) &&
-      resource.tool.toLowerCase().includes(filter.toLowerCase())
+      resource.tool.toLowerCase().includes(filter.toLowerCase()) &&
+      resource.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div>
-      <h1 className="ResourcesTitle"> Resources</h1>
+    <div className="contentResources">
+      <h1 className="ResourcesTitle"> Resource Directory</h1>
+      <input
+        className="searchBar"
+        type="text"
+        placeholder="Search resources by title"
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
+
       <div class="parent">
         <button
           value="html"
@@ -584,6 +610,7 @@ function ResourceLibrary() {
           <img
             className="libraryIcon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+            alt="html"
           />
         </button>
 
@@ -595,6 +622,7 @@ function ResourceLibrary() {
           <img
             className="libraryIcon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="css"
           />
         </button>
 
@@ -603,7 +631,10 @@ function ResourceLibrary() {
           onClick={() => handleButtonClick('javascript')}
           className="libraryIcon"
         >
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="javascript"
+          />
         </button>
         <button
           value="React"
@@ -613,6 +644,7 @@ function ResourceLibrary() {
           <img
             className="libraryIcon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="react"
           />
         </button>
         <button
@@ -623,6 +655,7 @@ function ResourceLibrary() {
           <img
             className="libraryIcon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+            alt="jest"
           />
         </button>
 
@@ -634,6 +667,7 @@ function ResourceLibrary() {
           <img
             className="libraryIcon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            alt="Figma"
           />
         </button>
 
@@ -645,16 +679,17 @@ function ResourceLibrary() {
           <img
             className="libraryIcon"
             src="https://raw.githubusercontent.com/github/explore/60cd2530141f67f07a947fa2d310c482e287e387/topics/playwright/playwright.png"
+            alt="Playwright"
           />
         </button>
       </div>
 
       <br />
-
-      <span>Title</span>
-      <span>Link</span>
-      <span>Description</span>
-      <span>Favourite</span>
+      <div className="resultHeadings">
+        <span>Results</span>
+        <span>Favourite</span>
+      </div>
+      <hr></hr>
       <ul className="fitlerResults">
         {filteredResources.map((resource) => (
           <li key={resource.id}>
@@ -662,9 +697,9 @@ function ResourceLibrary() {
               <span className="titleLink">
                 <h3>{resource.title}</h3>
                 <a
+                  className="resourceLink"
                   href={resource.link}
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   {resource.link}
                 </a>

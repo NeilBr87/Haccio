@@ -3,6 +3,10 @@
    flex-direction: row;
     justify-content: space-between;
 }
+.contentResources {
+  margin-top: 120px;
+  margin-left: 50px;
+}
 
 hr {
     border: 1px solid #363636;
@@ -43,12 +47,14 @@ hr {
     grid-template-rows: repeat(2, 0.5fr); /* Change to 4 rows */
     grid-column-gap: 35px;
     margin: 0px;
+    margin-bottom: 20px;
     
     padding: 30px 30px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(248, 248, 248);
     border-radius: 15px;
     height: 100px;
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    z-index: -1;
 }
 
 .libraryIcon {
@@ -62,23 +68,25 @@ hr {
     align-items: center;
     opacity: 0.8;
     border: none;
+    background-color: transparent;
     
   }
   
   .libraryIcon:hover {
     opacity: 1;
-    scale: 1.2;
+    scale: 1.1;
   }
 
   .titleLink{
     display: flex;
     align-items: center;
+    
 
   }
-  .titleLink p{
+  .titleLink a{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     font-style: italic;
 
   }
@@ -90,4 +98,42 @@ hr {
   
   .resourceFav {
     margin-left: 10px; /* add some space between the description and the checkbox */
+    height: 15px;
+    width: 15px;
+    left: 1300px;
+    top: -50px;
+  }
+
+  .ResourcesTitle {
+    margin-top: 0px;
+  }
+
+  .searchBar {
+    margin-top: 100px;
+    margin-left: 200px;
+    width:600px;
+    padding-left: 30px;
+    top: -67px;
+    right:-80px;
+    display: flex;
+    background-color: white;
+    border-color: rgb(228, 228, 228);
+    
+  }
+  
+  .resultHeadings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  color:#29b6fd;
+  font-style: italic;
+  }
+
+
+  .resourceLink{
+      color: #32A4DD;
   }
