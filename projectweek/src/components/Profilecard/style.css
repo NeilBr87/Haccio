@@ -20,7 +20,7 @@
     right: 200px;
     width: 300px ;
     height: 700px;
-    margin: 40px 10px ;
+    margin: 55px 10px ;
     padding: 50px 50px 50px 50px ;
     position: fixed;
 }
@@ -56,7 +56,6 @@
     font-size: inherit ;
     font-family: inherit ;
     text-align: justify ;
-    margin-left: ;
     width: 300px ;
     cursor: pointer;
 }
