@@ -28,8 +28,9 @@ function PersonalPanel() {
           <img
             className="githublogo1"
             src="https://img.icons8.com/ios-filled/256/github.png"
+            alt="GithubLogo"
           ></img>
-          <p></p>
+          <p> @SchoolOfCool</p>
         </div>
         <div className="plainline123right1"></div>
 
@@ -37,8 +38,9 @@ function PersonalPanel() {
           <img
             className="linkedinlogo1"
             src="https://img.icons8.com/ios-filled/256/linkedin.png"
+            alt="LinkedinLogo"
           ></img>
-          <p></p>
+          <p>/ChrisMeah</p>
         </div>
         <div className="plainline123right1"></div>
 
@@ -46,8 +48,9 @@ function PersonalPanel() {
           <img
             className="slacklogo1"
             src="https://img.icons8.com/ios-filled/256/slack.png"
+            alt="SlackLogo"
           ></img>
-          <p></p>
+          <p>@CMeah</p>
         </div>
         <div className="plainline123right1"></div>
 
@@ -55,8 +58,9 @@ function PersonalPanel() {
           <img
             className="emaillogo1"
             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/If_aiga_mail_134146_%281%29.png?20170917074726"
+            alt="EmailLogo"
           ></img>
-          <p></p>
+          <p>CMeah@soc.co.uk</p>
         </div>
       </div>
       <div className="userDashRight">
@@ -103,43 +107,43 @@ function PersonalPanel() {
             <img
               className="award1"
               src="https://i.ibb.co/hBwsv18/Untitled-2.png"
+              alt="Award1"
             ></img>
-      
           </div>
           <div ClassName="awardz">
             <img
               className="award1"
               src="https://i.ibb.co/hBwsv18/Untitled-2.png"
+              alt="Award2"
             ></img>{' '}
-          
           </div>
           <div ClassName="awardz">
             <img
               className="award1"
               src="https://i.ibb.co/hBwsv18/Untitled-2.png"
+              alt="Award3"
             ></img>{' '}
-          
           </div>
           <div ClassName="awardz">
             <img
               className="award2"
               src="https://i.ibb.co/hBwsv18/Untitled-2.png"
+              alt="Award4"
             ></img>{' '}
-            
           </div>
           <div ClassName="awardz">
             <img
               className="award2"
               src="https://i.ibb.co/hBwsv18/Untitled-2.png"
+              alt="Award5"
             ></img>{' '}
-          
           </div>
           <div ClassName="awardz">
             <img
               className="award2"
               src="https://i.ibb.co/hBwsv18/Untitled-2.png"
+              alt="Award6"
             ></img>{' '}
-          
           </div>
         </div>
         <h2> Support Stats</h2>
@@ -148,6 +152,7 @@ function PersonalPanel() {
             <img
               className="TicketsCompleted"
               src="https://imgs.search.brave.com/Z9AGKuzDAsvvbb_cCEQJTX-rHXqzGwf4vqMSAEmXwSE/rs:fit:980:976:1/g:ce/aHR0cHM6Ly9jZG4u/b25saW5ld2ViZm9u/dHMuY29tL3N2Zy9p/bWdfNDMyMDU4LnBu/Zw"
+              alt="TicketsCompleted"
             ></img>
             <h2> 1245</h2>
             <p> Tickets Completed</p>
@@ -156,6 +161,7 @@ function PersonalPanel() {
             <img
               className="Responsiveness"
               src="https://imgs.search.brave.com/nY5ado5wIOeMpGIC1FCdz612F9bEhLWUN5MpfSuu6YI/rs:fit:250:163:1/g:ce/aHR0cHM6Ly9jbGFp/bW5lZ290aWF0aW9u/YW5kcmJwLmhoY2dy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8xMS9p/Y29uLXJlc3BvbnNp/dmVuZXNzLnBuZw"
+              alt="Responsiveness"
             ></img>
             <h2> 99%</h2>
             <p> Responsiveness</p>
@@ -164,6 +170,7 @@ function PersonalPanel() {
             <img
               className="SupportFeedback"
               src="https://imgs.search.brave.com/5lJxlJadgwGnpTpPHJ9tbraGGAv9o9SdtU4TgQWdGic/rs:fit:981:981:1/g:ce/aHR0cDovL2Nkbi5v/bmxpbmV3ZWJmb250/cy5jb20vc3ZnL2Rv/d25sb2FkXzM3NDA0/MC5wbmc"
+              alt="SupportFeedback"
             ></img>
             <h2> 99%</h2>
             <p> Support Feedback</p>

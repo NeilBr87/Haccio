@@ -137,3 +137,15 @@ hr {
   .resourceLink{
       color: #32A4DD;
   }
+
+  .searchBar{
+    background: #FFFFFF;
+    border: 2px solid #e7e7e7;
+    border-radius: 12px;
+    position: relative;
+width: 600px;
+height: 44px;
+margin-bottom: -30px;
+padding: 0 10px;
+    
+  }

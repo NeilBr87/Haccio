@@ -11,15 +11,17 @@ import Profilecard from '../Profilecard';
 import Settings from '../Pages/Settings';
 import Homepage from '../Pages/Homepage';
 import Forum from '../Pages/Forum';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  
+} from 'react-router-dom';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-
   return (
     <div>
       <Navbar />
-
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />

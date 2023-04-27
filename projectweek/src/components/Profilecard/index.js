@@ -4,6 +4,8 @@ import { useState } from 'react';
 import './style.css';
 import Slider from '../Sliders';
 
+
+
 function Profilecard(props) {
   const peopleArray = [
     {
