@@ -10,6 +10,7 @@ function StaticForum() {
     const [expanded4, setExpanded4] = useState(false);
     const [expanded5, setExpanded5] = useState(false);
     const [expanded6, setExpanded6] = useState(false);
+    const [expanded7, setExpanded7] = useState(false);
 
     function handleClick() {
         setExpanded(!expanded);
@@ -37,6 +38,10 @@ function StaticForum() {
 
     function handleClick6() {
         setExpanded6(!expanded6);
+    }
+
+    function handleClick7() {
+        setExpanded7(!expanded7);
     }
 
     return (
@@ -282,6 +287,34 @@ function StaticForum() {
             </div>
         )}
     </div>
+
+
+    <div className='forum__post'>
+    <div className="forum_content">
+      <p className="forum_content">My computer won't start?! Help please!</p>
+      <div className="forumRow">
+        <h4 className="postAuthor">@pcnuke1989</h4>
+        <button className="forum_content" onClick={handleClick7}>+</button>
+      </div>
+    </div>
+    {expanded7 && (
+      <div className="commentsSectionPost3">
+        <div className="expand-content">
+          <p>I know this isn't strictly a coding problem, but the bootcamp is starting in five minutes and I can't turn my PC on!!</p>
+          <h4>@pcnuke1989</h4>
+        </div>
+        <div className="expand-content">
+          <p>Is it plugged in? Could the cable have come loose?</p>
+          <h4>@codeexpert</h4>
+        </div>
+        <div className="expand-content">
+          <p>Legend. Thank you!</p>
+          <h4>@pcnuke1989</h4>
+        </div>
+      </div>
+    )}
+  </div>
+
 
 
             </div>
