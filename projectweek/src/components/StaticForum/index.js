@@ -313,24 +313,24 @@ function StaticForum() {
         )}
     </div>
             
-            <div>
+            {/* <div>
             {expanded7 && (
                 <div>
                     <p>Hello</p>
                 </div>
             )}
-            </div>
+            </div> */}
                 
     </div>
     
-        <div className='submissionform'>
+        {/* <div className='submissionform'>
             <h4 className="submissionheader">Submit a new post</h4>
             <form className="myform">
                 <input className="postusername" type="text" placeholder="Username" />
                 <input className="postcomment" placeholder="Comment"></input>
                 <button className="forum_content" onClick={handleClick7}>+</button>
             </form>
-        </div>
+        </div> */}
      </div>
 
 
