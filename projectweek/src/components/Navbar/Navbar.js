@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './navBar.css';
 import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 import OnlineNow from '../OnlineNow/OnlineNow';
-import Login from '../Login';
+import LoginForm from '../Login';
 
 function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,12 @@ function Navbar(props) {
     setShowLogin(true);
   };
 
+  const handleLoginSuccess = (isLoggedIn) => {
+    setLoggedIn(isLoggedIn);
+    if (isLoggedIn) {
+      props.history.push('/dashboard');
+    }
+  };
   function toggleSidebar() {
     setIsOpen(!isOpen);
   }
@@ -119,9 +125,13 @@ function Navbar(props) {
             alt="SoC Logo"
             className="logo"
           />
-          <button className="register">Register</button>
-          <button className="loginbutton"> Login</button>
-          <Login />
+          <div className="loggedOutButtons">
+            <button className="register">Register</button>
+            <button className="loginbutton" onClick={handleLoginClick}>
+              Login
+            </button>
+          </div>
+          {showLogin && <LoginForm />}
         </div>
       )}
     </nav>

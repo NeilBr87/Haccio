@@ -10,6 +10,17 @@ body{
     justify-content: center;
     align-items: center; 
   } */
+
+  .officeVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px);
+  }
   .logintitle{
    
     width: 286px;
