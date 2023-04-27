@@ -46,8 +46,9 @@ function StaticForum() {
 
     return (
         <div className='pages'>
-            <h1>Outstanding issues forum</h1>
+            <h1 className="topheader">Outstanding issues forum</h1>
             <h3>All comments are moderated.</h3>
+            <h5>Key posts in the last 24 hours</h5>
             <div className='forum'>
                 <div className='forum__post'>
                     <div className="forum_content">
@@ -314,8 +315,6 @@ function StaticForum() {
       </div>
     )}
   </div>
-
-
 
             </div>
         </div>
