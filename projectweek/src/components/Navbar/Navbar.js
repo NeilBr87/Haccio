@@ -127,7 +127,10 @@ function Navbar(props) {
           />
           <div className="loggedOutButtons">
             <button className="register">Register</button>
-            <button className="loginbutton" onClick={handleLoginClick}>
+            <button
+              className="loginbutton"
+              onClick={handleLoginClick}
+            >
               Login
             </button>
           </div>
