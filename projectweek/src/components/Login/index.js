@@ -21,6 +21,7 @@ const LoginForm = () => {
   return (
     <>
       <div className="cover">
+      
         <h1 className="logintitle">Enter Login Details</h1>
         <input
           type="text"
@@ -50,10 +51,13 @@ const LoginForm = () => {
           <h3>Login Failed</h3>
           <p>Username or password incorrect</p>
         </div>
+
       </div>
       {loggedIn && <Navbar />}
     </>
   );
 };
 
+
 export default LoginForm;
+
