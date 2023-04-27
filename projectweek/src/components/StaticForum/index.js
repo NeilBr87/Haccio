@@ -60,12 +60,12 @@ function StaticForum() {
                             <button className="forum_content" onClick={handleClick}>+</button>
                         </div>
                     </div>
-                    {expanded && (
+                        {expanded && (
                         <div className="commentsSectionPost2">
                             <div className="expand-content">
-                                    <p>Hi everyone. I was trying to remove some untracked changes so I used the git clear function to force it through. Here's the problem - I have quite a few folders for note purposes that I don't commit to a repo and it removed them. Am I screwed?</p>
+                                <p>Hi everyone. I was trying to remove some untracked changes so I used the git clear function to force it through. Here's the problem - I have quite a few folders for note purposes that I don't commit to a repo and it removed them. Am I screwed?</p>
                                     <p className="commentAuthor">@Ihategit2023</p>
-                                </div>
+                            </div>
                             <div className="expand-content">
                                 <p>Unfortunatley so. Git clear is a very powerful, albeit misused, tool.</p>
                                 <p className="commentAuthor">@infinitejest541</p>
@@ -84,7 +84,7 @@ function StaticForum() {
                             </div>
                         </div>
                     )}
-                    
+
                 </div>
 
             <div className='forum'>
