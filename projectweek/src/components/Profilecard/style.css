@@ -11,30 +11,38 @@
     display: flex ;
     flex-direction: column ;
     justify-content: first baseline ;
-    border: 1px solid rgb(180, 180, 180) ;
+    background-color: #fdfdfd;
+    border: 1px solid rgb(255, 255, 255) ;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) ;
-    border-radius: 3% ;
-    max-width: 500px ;
-    margin: 0 auto ;
+    border-radius: 10px ;
+    right: 200px;
+    width: 300px ;
+    height: 700px;
+    margin: 40px 10px ;
     padding: 50px 50px 50px 50px ;
+    position: fixed;
 }
 
 .profilepic {
-    width: 320px ;
+    width: 300px ;
     height: 300px ;
     padding: 5px 5px 5px 5px ;
     margin-top: -15px ;
+    border-radius: 20px;
+    
 }
 
 .peoplenames {
-    width: 1200px;
+    width: 1400px;
     height: 900px ; /* Set the height of the div */
     overflow-x: hidden ; /* Add scrollbar to the div */
     overflow-y: auto ; /* hide vertical scrollbar */
     margin-top: 50px ;
+    margin-left: 100px;
     display: flex ;
     flex-direction: column ;
     text-align: justify ;
+    
 }
 
 .buttontext {
@@ -46,7 +54,9 @@
     font-size: inherit ;
     font-family: inherit ;
     text-align: justify ;
+    margin-left: ;
     width: 300px ;
+    cursor: pointer;
 }
 
 .linebreak123 {
@@ -126,15 +136,16 @@
     align-items: center;
     justify-content: flex-start;
     gap: 60px;
-    margin-top: 2px;
-    margin-bottom: 15px;
+    margin-top: px;
+    margin-bottom: 10px;
     font-size: 12px;
     margin-left: 5px;
   }
 
   .githublogo {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
   }
 
   .newlinebreak {
@@ -147,20 +158,22 @@
   }
 
   .plainline {
-    border-bottom: 1px solid rgb(150, 150, 180);
+    border-bottom: 2px solid rgb(150, 150, 180);
     width: 750px;
   }
 
   .plainline123right {
     width: 320px;
-    border-bottom: 1px solid rgb(150, 150, 180);
+    border-bottom: 2px solid #00324A;
     margin-bottom: 10px;
     margin-top: -10px;
+    opacity: 0.3;
   }
 
   .linkedinlogo {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
   }
 
   .linkedin {
@@ -169,8 +182,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 60px;
-    margin-top: 2px;
-    margin-bottom: 15px;
+    margin-top: px;
+    margin-bottom: 10px;
     font-size: 12px;
     margin-left: 5px;
   }
@@ -185,15 +198,16 @@
     align-items: center;
     justify-content: flex-start;
     gap: 60px;
-    margin-top: 2px;
-    margin-bottom: 15px;
+    margin-top: px;
+    margin-bottom: 10px;
     font-size: 12px;
     margin-left: 5px;
   }
 
   .slacklogo {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
   }
 
   .email {
@@ -202,13 +216,14 @@
     align-items: center;
     justify-content: flex-start;
     gap: 60px;
-    margin-top: 2px;
-    margin-bottom: 15px;
+    margin-top: px;
+    margin-bottom: 10px;
     font-size: 12px;
     margin-left: 5px;
   }
 
   .emaillogo {
-    width: 45px;
-    height: 35px;
+    width: 30px;
+    opacity: 0.5;
+    
   }

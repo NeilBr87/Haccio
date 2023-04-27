@@ -4,7 +4,7 @@ import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 import OnlineNow from '../OnlineNow/OnlineNow';
 import Login from '../Login';
 
-function Navbar() {
+function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(true);
   const [showLogin, setShowLogin] = useState(false);
@@ -43,18 +43,22 @@ function Navbar() {
               src="https://img.icons8.com/ios/256/new-post.png"
               alt="mailbox"
             />
-            <img
-              id="navIcon"
-              className="ticket"
-              src="https://img.icons8.com/ios/256/ticket.png"
-              alt="ticket"
-            />
-            <img
-              id="navIcon"
-              className="avatar"
-              src="https://img.icons8.com/ios/256/name--v1.png"
-              alt="avatar"
-            />
+            <a href="/Support">
+              <img
+                id="navIcon"
+                className="ticket"
+                src="https://img.icons8.com/ios/256/ticket.png"
+                alt="ticket"
+              />
+            </a>
+            <a href="/dashboard">
+              <img
+                id="navIcon"
+                className="avatar"
+                src="https://img.icons8.com/ios/256/name--v1.png"
+                alt="avatar"
+              />
+            </a>
           </ul>
 
           <div className={`sidebar ${isOpen ? 'open' : ''}`}>
@@ -101,12 +105,6 @@ function Navbar() {
               <li className="sidebar-menu-item">
                 <a href="/people" className="sidebar-menu-link">
                   People
-                </a>
-              </li>
-              <hr></hr>
-              <li className="sidebar-menu-item">
-                <a href="/progress" className="sidebar-menu-link">
-                  Progress
                 </a>
               </li>
             </ul>

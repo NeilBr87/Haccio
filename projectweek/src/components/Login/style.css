@@ -1,4 +1,4 @@
- /* * {
+/* * {
     margin : 0;
     box-sizing: border-box ;
     font-family: Arial, Helvetica, sans-serif
@@ -10,33 +10,38 @@ body{
     justify-content: center;
     align-items: center; 
   } */
-
-  .officeVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(4px);
-  }
+  .logintitle{
+   
+    width: 286px;
+    height: 24px;
+   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
   
 .cover {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 30em;
-    height: 35em;
-    position:relative;
+    background-color: #00324A;
+    position: absolute;
+    width: 530px;
+    height: 765px;
+    left: 416px;
+    top: 110px;
     border-radius: 1em;
     box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    left:35%;
+    
     
 }
 
@@ -53,8 +58,9 @@ body{
     width: 40%;
     height: 90%;
     border-radius: 0.5em;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     background-position: center;
+    border: 1px solid rgb(255, 255, 255);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -78,13 +84,16 @@ body{
 .login-btn{
     width: 40%;
     height: 3em;
-    background-color: green;
+    background-color: #32A4DD;
+    color: white;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: ease 0.5s;
     border-radius: 0.25em;
     cursor: pointer;
+    margin-bottom: -50px;
 }
 
 
@@ -94,15 +103,23 @@ body{
 }
 
 input{
-    font-size: 20px;
+    background: #FFFFFF;
+    border: 2px solid #8E8E8E;
+    border-radius: 12px;
+    position: relative;
+width: 352px;
+height: 44px;
+margin-bottom: -50px;
+    
+    
 }
 
 input:focus {
-    outline-color: green;
+    outline-color: #32A4DD;
 }
 
 .text{
-    font-size: 15px;
+    font-size: 1px;
     position: relative;
     bottom: -2em;
 }
@@ -114,16 +131,33 @@ input:focus {
 
 .login-popup {
     position: absolute;
-    height: 30em;
-    width: 30em;
+    width: 530px;
+    height: 765px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 0.25em;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(48, 48, 48);
     bottom: 0;
     transform: scale(1);
     transition: 1.5s;}
 
+.signUP {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+}
+.sign {
+    color: white;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: auto;
+}
