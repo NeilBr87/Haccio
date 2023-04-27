@@ -1,0 +1,21 @@
+.ResourceForm {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+  .ResourceForm label {
+    display: block;
+  }
+  
+  .ResourceForm textarea {
+    height: 100px;
+  }
+  
+  .ResourceForm small {
+    display: block;
+    margin-top: 5px;
+  }

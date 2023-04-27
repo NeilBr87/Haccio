@@ -1,20 +1,8 @@
 import './ResourceLibrary.css';
 import React, { useState } from 'react';
+import ResourceInput from '../Input/input';
 
 function ResourceLibrary() {
-  // default tool
-  const addResource = () => {
-    const newResource = {
-      id: resources.length + 1,
-      tool: '',
-      title: ' ',
-      link: '',
-      description: '',
-      keywords: ['', ''],
-    };
-    setResources([...resources, newResource]);
-  };
-
   const [resources, setResources] = useState([
     {
       id: 1,
@@ -570,11 +558,10 @@ function ResourceLibrary() {
   ]);
   const [filter, setFilter] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
-  // const [searchQuery, setSearchQuery] = useState('');
 
-  // const handleSearchQueryChange = (event) => {
-  //   setSearchQuery(event.target.value);
-  // };
+  const handleAddResource = (newResource) => {
+    setResources([...resources, newResource]);
+  };
 
   const handleButtonClick = (tool) => {
     setFilter(tool);
@@ -683,6 +670,7 @@ function ResourceLibrary() {
           />
         </button>
       </div>
+      <ResourceInput onAddResource={handleAddResource} />
 
       <br />
       <div className="resultHeadings">

@@ -38,10 +38,12 @@ const LoginForm = () => {
         <h1 className="logintitle">Enter Login Details</h1>
         <input
           type="text"
+          className="logininput"
           placeholder="Username"
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
+          className="logininput"
           type="password"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}

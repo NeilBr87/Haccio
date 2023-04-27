@@ -9,6 +9,14 @@
     flex-direction:column;
   }
 }
+.personalpanel1 p {
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: 600;
+    color: #000000;
+    opacity: 0.5;
+}
 
 .UserProficiency1 {
     display: flex;
@@ -141,7 +149,8 @@ font-style: italic;
   .personname1 {
     margin: 0 auto;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
+    margin: 10px;
   }
 
   .progressEnds1 {
