@@ -1,0 +1,286 @@
+.page {
+    display: flex;
+    flex-direction: row;
+
+}
+
+ @media screen and (max-width: 1327px){
+  .page {
+    flex-direction:column;
+  }
+}
+
+.UserProficiency1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: ;
+    height: 210px;
+    padding: 0 10px 10px 10px;
+    /* background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 15px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15); */
+ 
+}
+.award1{
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    height: 45px;
+    width: 45px;
+}
+.awardz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    padding: 10px 10px;
+}
+.awardz p {
+margin-top: -10px;
+font-style: italic;
+}
+    
+.award2{
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    height: 45px;
+    width: 45px;
+    opacity: 0.4;
+}
+.userAwards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    height: 110px;
+    padding: 0 10px;
+    /* background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 15px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15); */
+}
+
+.SupportStats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    height: 170px;
+    padding: 0 0px;
+    /* background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 15px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);*/
+}
+.SupportStats img {
+    height: 55px;
+
+}
+.statsbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    padding: 10px 10px;
+}
+.statsbar p {
+margin-top: -10px;
+font-style: italic;
+
+}
+.personalpanel1 {
+    display: flex ;
+    flex-direction: column ;
+    justify-content: first baseline ;
+    background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 15px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    border-radius: 10px ;
+   width: 400px ;
+    height: 610px;
+    margin:-70px 40px ;
+    padding: 50px 0px 50px 50px ;
+}
+
+.profilepic1 {
+    width: 350px ;
+    height: 350px ;
+    padding: 5px 5px 5px 5px ;
+
+    margin: -15px 0px 0px 0px;
+    border-radius: 20px;
+    
+    
+}
+.proficiencyfields1 {
+    display: flex ;
+    flex-direction: row ;
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 10px ;
+    text-align: right ;
+    height: 25px ;
+    font-weight: 500;
+    padding-right: 2px;
+    
+    
+    
+  }
+
+  .proficiencytext1 {
+    width: 72px;
+    font-size: 14px;
+  }
+
+  .personname1 {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .progressEnds1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -5px;
+  }
+
+  .linebreakright1 {
+    width: 320px;
+    margin-top: -8px;
+    margin-bottom: -2px;
+  }
+
+  .github1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .githublogo1 {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  .newlinebreak1 {
+    border-top: 2px solid black;
+  }
+
+  .blackline1 {
+    width: 900px;
+    z-index: 999;
+  }
+
+  .plainline1 {
+    border-bottom: 2px solid rgb(150, 150, 180);
+    width: 750px;
+  }
+
+  .plainline123right1 {
+    width: 350px;
+    border-bottom: 2px solid #00324A;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    opacity: 0.3;
+  }
+  .plainline123right2 {
+    width: 450px;
+    border-bottom: 2px solid #00324A;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    opacity: 0.3;
+  }
+
+  .linkedinlogo1 {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  .linkedin1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .myName1 {
+    margin: 0 auto;
+  }
+
+  .slack1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .slacklogo1 {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  .email1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .emaillogo1 {
+    width: 30px;
+    opacity: 0.5;
+    
+  }
+  .proficiencybar1 {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(150, 150, 180);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    color: #32A4DD;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  h4 {
+    color: #32A4DD;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  background-color: rgb(248, 248, 248);
+  border-radius: 15px;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);

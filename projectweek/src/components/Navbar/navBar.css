@@ -1,8 +1,12 @@
 .navbar {
-    position: relative;
+    position: fixed;
     height: 55px;
     background-color: #f5f5f5;
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-top: 0px;
+    top: 0;
+    z-index: 1;
   }
   
   .navbar-toggle {
@@ -23,8 +27,9 @@
     align-items: center;
     justify-content: flex-end;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     list-style: none;
+    
   }
   
   .navbar-menu-item {
@@ -203,6 +208,7 @@
 
   #navIcon {
     height:19px;
+    width: 19px;
     margin: 5px;
     opacity: 0.6;
 padding-top: 3px;

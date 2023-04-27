@@ -1,5 +1,4 @@
-
-import Login from "../Login/index";
+import Login from '../Login/index';
 import './App.css';
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
@@ -34,7 +33,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-
 }
 
 export default App;

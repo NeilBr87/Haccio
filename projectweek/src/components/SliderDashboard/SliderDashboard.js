@@ -1,7 +1,7 @@
-import { useState } from "react";
-import "./style.css";
+import { useState } from 'react';
+import './style.css';
 
-function Slider(props) {
+function SliderDashboard(props) {
   const [sliderValue, setSliderValue] = useState(props.value);
 
   const handleSliderChange = (event) => {
@@ -10,17 +10,17 @@ function Slider(props) {
 
   let bgChange;
   if (sliderValue < 45) {
-    bgChange = "red";
+    bgChange = 'red';
   } else if (sliderValue < 65) {
-    bgChange = "yellow";
+    bgChange = 'yellow';
   } else {
-    bgChange = "green";
+    bgChange = 'green';
   }
 
   return (
     <div className="slidecontainer">
       <input
-        className="slider"
+        className="sliderDashboard"
         type="range"
         min="1"
         max="100"
@@ -34,4 +34,4 @@ function Slider(props) {
   );
 }
 
-export default Slider;
+export default SliderDashboard;

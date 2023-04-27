@@ -212,8 +212,10 @@ function Profilecard(props) {
 
   return (
     <div className="nameandprofile">
+   
 
       <div className="peoplenames">
+      <h1> Bootcamper Directory</h1>
 
       <div className="topheadings">
         <h3 className="nameheadings">A-M</h3>
@@ -300,6 +302,7 @@ function Profilecard(props) {
             <h4>Confident</h4>
           </div>
           <div className="plainline123right"></div>
+
           <div className="proficiencyfields">
             <p className="proficiencytext">HTML</p>
             <Slider className="proficiencybar" value={person.HTMLvalue} />
@@ -323,25 +326,25 @@ function Profilecard(props) {
           <div className="proficiencyfields">
             <p className="proficiencytext">Playwright</p>
             <Slider className="proficiencybar" value={person.Playwrightvalue} />
-          </div>
           <br></br>
           <div className="plainline123right"></div>
 
 
+
           <div className="github">
-            <img className="githublogo" src="https://avatars.githubusercontent.com/u/67468718?v=4"></img>
+            <img className="githublogo" src="https://img.icons8.com/ios-filled/256/github.png"></img>
             <p>{person.githubprofile}</p>
           </div>
           <div className="plainline123right"></div>
 
           <div className="linkedin">
-            <img className="linkedinlogo" src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"></img>
+            <img className="linkedinlogo" src="https://img.icons8.com/ios-filled/256/linkedin.png"></img>
             <p>{person.Linkedin}</p>
           </div>
           <div className="plainline123right"></div>
 
           <div className="slack">
-            <img className="slacklogo" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png"></img>
+            <img className="slacklogo" src="https://img.icons8.com/ios-filled/256/slack.png"></img>
             <p>{person.Slack}</p>
           </div>
           <div className="plainline123right"></div>
@@ -350,7 +353,7 @@ function Profilecard(props) {
             <img className="emaillogo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/If_aiga_mail_134146_%281%29.png?20170917074726"></img>
             <p>{person.Email}</p>
           </div>
-          <div className="plainline123right"></div>
+       
         </div>
       ))}
     </div>
