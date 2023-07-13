@@ -1,10 +1,10 @@
-import react from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom';
-import { useState } from 'react';
+// import react from 'react';
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Switch,
+// } from 'react-router-dom';
+// import { useState } from 'react';
 import SliderDashboard from '../SliderDashboard/SliderDashboard';
 import './PersonalPanel.css';
 import '../SliderDashboard/style.css';
