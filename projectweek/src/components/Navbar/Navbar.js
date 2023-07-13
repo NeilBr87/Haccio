@@ -7,7 +7,7 @@ import LoginForm from '../Login';
 function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(true);
-  // const [showLogin, setShowLogin] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   // const handleLoginClick = () => {
   //   setShowLogin(true);
@@ -129,7 +129,7 @@ function Navbar(props) {
             <button className="register">Register</button>
             <button
               className="loginbutton"
-              onClick={handleLoginClick}
+              // onClick={handleLoginClick}
             >
               Login
             </button>
