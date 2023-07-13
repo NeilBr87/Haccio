@@ -7,18 +7,18 @@ import LoginForm from '../Login';
 function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(true);
-  const [showLogin, setShowLogin] = useState(false);
+  // const [showLogin, setShowLogin] = useState(false);
 
   const handleLoginClick = () => {
     setShowLogin(true);
   };
 
-  const handleLoginSuccess = (isLoggedIn) => {
-    setLoggedIn(isLoggedIn);
-    if (isLoggedIn) {
-      props.history.push('/dashboard');
-    }
-  };
+  // const handleLoginSuccess = (isLoggedIn) => {
+  //   setLoggedIn(isLoggedIn);
+  //   if (isLoggedIn) {
+  //     props.history.push('/dashboard');
+  //   }
+  // };
   function toggleSidebar() {
     setIsOpen(!isOpen);
   }
