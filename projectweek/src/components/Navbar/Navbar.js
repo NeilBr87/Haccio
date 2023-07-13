@@ -6,7 +6,7 @@ import LoginForm from '../Login';
 
 function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(true);
+  // const [loggedIn, setLoggedIn] = useState(true);
   // const [showLogin, setShowLogin] = useState(false);
 
   const handleLoginClick = () => {
