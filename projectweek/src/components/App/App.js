@@ -1,13 +1,13 @@
-import Login from '../Login/index';
+// import Login from '../Login/index';
 import './App.css';
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Dashboard from '../Pages/Dashboard';
 import Support from '../Pages/Support';
 import Resources from '../Pages/Resources';
 import People from '../Pages/People';
-import Profilecard from '../Profilecard';
+// import Profilecard from '../Profilecard';
 import Settings from '../Pages/Settings';
 import Homepage from '../Pages/Homepage';
 import Forum from '../Pages/Forum';
