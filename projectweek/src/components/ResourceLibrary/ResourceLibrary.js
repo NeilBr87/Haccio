@@ -684,13 +684,13 @@ function ResourceLibrary() {
             <>
               <span className="titleLink">
                 <h3>{resource.title}</h3>
-                <a
+                {/* <a
                   className="resourceLink"
                   href={resource.link}
                   target="_blank"
                 >
                   {resource.link}
-                </a>
+                </a> */}
               </span>
               <span classname="descFav">
                 <p>{resource.description}</p>
