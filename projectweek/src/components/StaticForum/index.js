@@ -10,7 +10,7 @@ function StaticForum() {
     const [expanded4, setExpanded4] = useState(false);
     const [expanded5, setExpanded5] = useState(false);
     const [expanded6, setExpanded6] = useState(false);
-    const [expanded7, setExpanded7] = useState(false);
+    // const [expanded7, setExpanded7] = useState(false);
 
     function handleClick() {
         setExpanded(!expanded);
