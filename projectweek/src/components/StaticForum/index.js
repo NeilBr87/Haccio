@@ -40,9 +40,9 @@ function StaticForum() {
         setExpanded6(!expanded6);
     }
 
-    function handleClick7() {
-        setExpanded7(!expanded7);
-    }
+    // function handleClick7() {
+    //     setExpanded7(!expanded7);
+    // }
 
     return (
         <div className='pages'>
