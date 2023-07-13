@@ -13,6 +13,7 @@ function Profilecard(props) {
       Name: 'Adam Adams',
       imageURL:
         'https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg',
+      alt: 'profile pic',
       HTMLvalue: 90,
       CSSvalue: 80,
       JSvalue: 70,
@@ -29,7 +30,8 @@ function Profilecard(props) {
       Name: 'Adam Aronson',
       imageURL:
         'https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?b=1&s=170667a&w=0&k=20&c=AAVVOvN9uY1Rd_0QsWb8WvBN-4VSUdCORiZx51s5OLc=',
-      HTMLvalue: 80,
+        alt: 'profile pic',
+        HTMLvalue: 80,
       CSSvalue: 40,
       JSvalue: 60,
       Jestvalue: 90,
@@ -373,8 +375,7 @@ function Profilecard(props) {
           <div className="github">
             <img
               className="githublogo"
-              src="https://img.icons8.com/ios-filled/256/github.png"
-            ></img>
+              src="https://img.icons8.com/ios-filled/256/github.png" alt="logo"            ></img>
             <p>{person.githubprofile}</p>
           </div>
           <div className="plainline123right"></div>
@@ -382,7 +383,7 @@ function Profilecard(props) {
           <div className="linkedin">
             <img
               className="linkedinlogo"
-              src="https://img.icons8.com/ios-filled/256/linkedin.png"
+              src="https://img.icons8.com/ios-filled/256/linkedin.png" alt="logo" 
             ></img>
             <p>{person.Linkedin}</p>
           </div>
@@ -391,7 +392,7 @@ function Profilecard(props) {
           <div className="slack">
             <img
               className="slacklogo"
-              src="https://img.icons8.com/ios-filled/256/slack.png"
+              src="https://img.icons8.com/ios-filled/256/slack.png" alt="logo" 
             ></img>
             <p>{person.Slack}</p>
           </div>
@@ -401,7 +402,7 @@ function Profilecard(props) {
             <img
               className="emaillogo"
               src="https://upload.wikimedia.org/wikipedia/commons/7/7a/If_aiga_mail_134146_%281%29.png?20170917074726"
-            ></img>
+              alt="logo" ></img>
             <p>{person.Email}</p>
           </div>
         </div>

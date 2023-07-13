@@ -6,8 +6,8 @@ import LoginForm from '../Login';
 
 function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(true);
-  const [showLogin, setShowLogin] = useState(false);
+  const loggedIn = true;
+  const showLogin = false;
 
   // const handleLoginClick = () => {
   //   setShowLogin(true);
@@ -69,13 +69,13 @@ function Navbar(props) {
 
           <div className={`sidebar ${isOpen ? 'open' : ''}`}>
             <ul className="sidebar-menu">
-              <a
+              {/* <a
                 href="javascript:void(0)"
                 className="closebtn"
                 onClick={toggleSidebar}
               >
                 &times;
-              </a>
+              </a> */}
               <li>
                 <img
                   src="https://www.schoolofcode.co.uk/static/logo-51c754388b198e5bbb0d08a971ebbfa2.png"
